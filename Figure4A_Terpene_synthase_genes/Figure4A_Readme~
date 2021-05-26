@@ -1,0 +1,186 @@
+
+### README for the figure 4A 
+
+### Figure prepared thanks to the jvci software
+### https://github.com/tanghaibao/jcvi
+### https://github.com/tanghaibao/jcvi/wiki/MCscan-(Python-version)
+
+
+## gcc/7.3.0
+## python/3.6
+## pip install --user jcvi
+
+# extraction of the terpene synthase genes in the V4 annotation gff file
+
+
+for i in Macma4_07_g21890.1 Macma4_07_g21860.1 Macma4_07_g21850.1 Macma4_07_g21820.1 Macma4_07_g21830.1 Macma4_07_g21940.1 Macma4_07_g21790.1 Macma4_07_g21770.1 Macma4_07_g21780.1 Macma4_07_g21690.1 Macma4_07_g21800.1 Macma4_07_g21870.1 Macma4_07_g21930.1 Macma4_07_g21900.1 Macma4_07_g21840.1 Macma4_07_g21700.1 Macma4_07_g21610.1 Macma4_07_g21550.1 Macma4_07_g21540.1 Macma4_07_g21620.1 Macma4_07_g21580.1 Macma4_07_g21480.1 Macma4_07_g21440.1 Macma4_07_g21420.1 Macma4_07_g21500.1 Macma4_07_g21530.1 Macma4_07_g21570.1 Macma4_07_g21430.1 Macma4_07_g21590.1 Macma4_07_g21460.1 Macma4_07_g21450.1 Macma4_07_g21660.1 Macma4_07_g21650.1 Macma4_07_g21730.1 Macma4_07_g21560.1 Macma4_07_g21640.1 Macma4_07_g21740.1 Macma4_07_g21910.1; do cat Musa_acuminata_pahang_v4.gff  | grep $i >> TDGs_V4.gff; done;
+
+
+# extraction of the terpene synthase genes in the V2 annotation gff file : one for the left cluster and one for the right cluster :
+
+for i in Ma07_t18590.1 Ma07_t18650.1 Ma07_t18570.1 Ma07_t18560.1 Ma07_t18640.1 Ma07_t18610.1,Ma07_t18580.1,Ma07_t18680.1 Ma07_t18630.1 Ma07_t18540.1 Ma07_t18620.1; do cat musa_acuminata_v2.gff3 | grep $i >> TDGs_V2_left.gff; done;
+
+
+for i in Ma07_t20710.1 Ma07_t20740.1 Ma07_t20750.1 Ma07_t20660.1 Ma07_t20700.1 Ma07_t20680.1 Ma07_t20650.1 Ma07_t20720.1 Ma07_t20730.1; do cat musa_acuminata_v2.gff3 | grep $i >> TDGs_V2_right.gff; done;
+
+
+# Convert the GFF to BED file and rename them.
+
+python -m jcvi.formats.gff bed --type=CDS --key=Parent TDGs_V4.gff -o v4.bed
+
+python -m jcvi.formats.gff bed --type=CDS --key=Parent TDGs_V2_left.gff -o v2_left.bed
+
+python -m jcvi.formats.gff bed --type=CDS --key=Parent TDGs_V2_right.gff -o v2_right.bed
+
+cat v4.bed | awk '{print $1"\t"$2"\t"$3"\t""Parent="$4"\t"$5"\t"$6}' > temp
+mv temp v4.bed
+ 
+cat v2_left.bed | awk '{print $1"\t"$2"\t"$3"\t""Parent="$4"\t"$5"\t"$6}' > temp
+mv temp v2_left.bed
+
+cat v2_right.bed | awk '{print $1"\t"$2"\t"$3"\t""Parent="$4"\t"$5"\t"$6}' > temp
+mv temp v2_right.bed
+ 
+# preparation of the sequence file of the terpene synthase genes :
+
+gff2fasta -i TDGs_V4.gff -b DH-Pahang.4.2.fasta -o v4_TDG_CDS.fasta -type CDS
+
+gff2fasta -i TDGs_V2_left.gff -b musa_acuminata_v2_pseudochromosome.fna -o v2_TDG_CDS_left.fasta -type CDS
+
+gff2fasta -i TDGs_V2_right.gff -b musa_acuminata_v2_pseudochromosome.fna -o v2_TDG_CDS_right.fasta -type CDS
+
+
+# reformat the fasta files :
+
+python -m jcvi.formats.fasta format v4_TDG_CDS.fasta v4.cds
+
+python -m jcvi.formats.fasta format v2_TDG_CDS_left.fasta v2_left.cds
+
+python -m jcvi.formats.fasta format v2_TDG_CDS_right.fasta v2_right.cds
+
+
+# Pairwise synteny search (using last alignment): left part of the V2 cluster vs V4 cluster
+
+
+python -m jcvi.compara.catalog ortholog v4 v2_left --no_strip_names
+
+python -m jcvi.graphics.dotplot v4.v2_left.anchors
+
+python -m jcvi.compara.synteny screen --minspan=1 --simple v4.v2_left.anchors v4.v2_left.anchors.new 
+
+
+more expanded_blocks.layout
+# y, xstart, xend, rotation, color, label, va,  bed
+ .4,     .1,    .8,       0,      , v2, top, expanded_v2.bed
+ .6,     .1,    .8,       0,      , v4, top, expanded_v4.bed
+# edges
+e, 0, 1
+
+more seqids
+chr07
+chr07
+
+python -m jcvi.compara.synteny mcscan v4.bed v4.v2_left.lifted.anchors --iter=1 -o v4.v2_left.i1.blocks
+
+
+# Pairwise synteny search (using last alignment): right part of the V2 cluster vs V4 cluster
+ 
+python -m jcvi.compara.catalog ortholog v4 v2_right --no_strip_names
+
+python -m jcvi.graphics.dotplot v4.v2_right.anchors
+
+python -m jcvi.compara.synteny screen --minspan=1 --simple v4.v2_right.anchors v4.v2_right.anchors.new 
+
+
+python -m jcvi.compara.synteny mcscan v4.bed v4.v2_right.lifted.anchors --iter=1 -o v4.v2_right.i1.blocks
+
+## Combining the blocks : 
+
+python -m jcvi.formats.base join v4.v2_left.i1.blocks v4.v2_right.i1.blocks --noheader | cut -f1,2,4,6 > cut.blocks
+python -m jcvi.formats.base join v4.v2_right.i1.blocks v4.v2_left.i1.blocks  --noheader | cut -f1,2,4,6 > cut.blocks
+
+more cut.layout
+# x,   y, rotation,     ha,     va, color, ratio,            label
+0.5, 0.6,        0, center,    top,      ,     1,       v2 
+0.3, 0.4,        0, center, bottom,      ,    .5,	v2 
+0.7, 0.4,        0, center, bottom,      ,    .5,	v4
+# edges
+e, 0, 1
+e, 0, 2
+
+
+cat v4.bed v2_right.bed v2_left.bed  > right_left_v4.bed
+
+python -m jcvi.graphics.synteny cut.blocks right_left_v4.bed cut.layout --glyphcolor=orthogroup
+
+
+###############################################################################################################
+## extended region : synteny on the region of the chromosome 7 containing the terpense synthase genes clusters
+
+
+## coordinates on chromosome 7 of the V4 assembly :
+
+cat Musa_acuminata_pahang_v4.gff | grep chr07 | awk '{if($4>29600000 && $5<33000000){print $0}}' > expanded_chr07_region_v4.gff
+
+## coordinates on chromosome 7 of the V2 assembly :
+
+cat musa_acuminata_v2.gff3 | grep chr07 | awk '{if($4>26000000 && $5<29000000){print $0}}' > expanded_chr07_region_v2.gff
+
+# Convert the GFF to BED file and rename them.
+
+python -m jcvi.formats.gff bed --type=CDS --key=Parent expanded_chr07_region_v2.gff -o expanded_v2.bed
+
+python -m jcvi.formats.gff bed --type=CDS --key=Parent expanded_chr07_region_v4.gff -o expanded_v4.bed
+
+cat expanded_v4.bed | awk '{print $1"\t"$2"\t"$3"\t""Parent="$4"\t"$5"\t"$6}' > temp
+mv temp expanded_v4.bed
+ 
+cat expanded_v2.bed | awk '{print $1"\t"$2"\t"$3"\t""Parent="$4"\t"$5"\t"$6}' > temp
+ mv temp expanded_v2.bed
+
+# preparation of the sequence file of the genes contained in this region: 
+
+gff2fasta -i expanded_chr07_region_v4.gff -b DH-Pahang.4.2.fasta -o expanded_v4_TDG_CDS.fasta -type CDS
+
+
+gff2fasta -i expanded_chr07_region_v2.gff -b musa_acuminata_v2_pseudochromosome.fna -o expanded_v2_TDG_CDS.fasta -type CDS
+
+# reformat the fasta files :
+
+python -m jcvi.formats.fasta format expanded_v2_TDG_CDS.fasta expanded_v2.cds
+
+python -m jcvi.formats.fasta format expanded_v4_TDG_CDS.fasta expanded_v4.cds
+
+
+# Pairwise synteny search (using last alignment): left part of the V2 cluster vs V4 cluster
+
+python -m jcvi.compara.catalog ortholog expanded_v2 expanded_v4 --no_strip_names
+
+python -m jcvi.graphics.dotplot expanded_v2.expanded_v4.anchors
+
+python -m jcvi.compara.synteny screen --minspan=1 --simple expanded_v2.expanded_v4.anchors expanded_v2.expanded_v4.anchors.new 
+
+python -m jcvi.graphics.karyotype seqids expanded_layout
+
+python -m jcvi.graphics.karyotype seqids layout --shadestyle=line
+
+more expanded_blocks.layout
+# y, xstart, xend, rotation, color, label, va,  bed
+ .4,     .1,    .8,       0,      , v2, top, expanded_v2.bed
+ .6,     .1,    .8,       0,      , v4, top, expanded_v4.bed
+# edges
+e, 0, 1
+
+more seqids
+chr07
+chr07
+
+python -m jcvi.compara.synteny mcscan expanded_v2.bed expanded_v2.expanded_v4.lifted.anchors --iter=1 -o expanded_v2.expanded_v4.i1.blocks
+
+
+cat expanded_v2.bed expanded_v4.bed > expanded_v2_v4.bed
+
+python -m jcvi.graphics.synteny expanded_v2.expanded_v4.i1.blocks expanded_v2_v4.bed expanded_blocks.layout 
+
+
+

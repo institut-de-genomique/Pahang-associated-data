@@ -1,0 +1,112 @@
+chr07	manual_curation	mRNA	28664566	28666766	.	+	1	ID=Ma07_t20710.1;Parent=Ma07_g20710;Name=Ma07_t20710.1;Note=Putative ( )-delta-cadinene synthase isozyme A;old_locus_tag=GSMUA_AchrUn_randomG13680_001;source=CIRAD:GSMUA_AchrUn_randomT13680_001
+chr07	manual_curation	polypeptide	28664566	28666766	.	+	1	ID=Ma07_p20710.1;Dbxref=TrEMBL:Q0VHD6,TrEMBL:B3ITR7,TrEMBL:B3ITR6,TrEMBL:B3ITC0,TrEMBL:B3ITB9,TrEMBL:B3ITB8,TrEMBL:B3ITB7,TrEMBL:B1B1U3,TIGR:Os08g07120.1,TIGR:Os08g07080.1,TIGR:Os08g04500.2,TIGR:Os08g04500.1,TIGR:Os07g11790.1,TIGR:Os03g31430.1,TIGR:Os03g22620.1,TIGR:Os01g23530.1,SwissProt:Q5SBP6,SwissProt:Q43714,SwissProt:Q39978,SwissProt:Q39761,SwissProt:Q39760,SwissProt:P93665,SwissProt:P59287,SwissProt:O49853,InterPro:IPR008949,InterPro:IPR005630,GreenPhyl:GP000072;Derives_from=Ma07_t20710.1;Name=Ma07_p20710.1;Ontology_term=CC_gene:GDS,CC_gene:CAD1-C2,CC_gene:CDN1,CC_gene:CAD1-A,CC_functional_completeness:fragment,PRODUCT:Putative ( )-delta-cadinene synthase isozyme A,GO:0016829,GO:0000287,CC_evidence_code:ISS,CC_status:in_progress,CC_evidence:automatic,CC_EC_number:no_EC_number;alternative_splicing=to_fill;annotator_comment=to_fill;color=6;date=Tue Dec  7 21:17:29 CET 2010;inference={gaze};note=Ma07_g20710~ Putative ( )-delta-cadinene synthase isozyme A~ CAD1-A~ fragment;old_locus_tag=GSMUA_AchrUn_randomG13680_001;owner=musa;source=CIRAD:GSMUA_AchrUn_randomT13680_001
+chr07	manual_curation	CDS	28664566	28664611	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	CDS	28664810	28664891	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	CDS	28664992	28665008	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	CDS	28665082	28665179	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	CDS	28665252	28665287	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	CDS	28665495	28665617	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	CDS	28665818	28666021	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	CDS	28666473	28666766	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	exon	28664566	28664611	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	exon	28664810	28664891	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	exon	28664992	28665008	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	exon	28665082	28665179	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	exon	28665252	28665287	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	exon	28665495	28665617	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	exon	28665818	28666021	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	exon	28666473	28666766	.	+	1	Parent=Ma07_t20710.1
+chr07	manual_curation	mRNA	28695858	28698364	.	+	1	ID=Ma07_t20740.1;Parent=Ma07_g20740;Name=Ma07_t20740.1;Note=Putative ( )-delta-cadinene synthase isozyme A;old_locus_tag=GSMUA_Achr7G19250_001;source=CIRAD:GSMUA_Achr7T19250_001
+chr07	manual_curation	polypeptide	28695858	28698364	.	+	1	ID=Ma07_p20740.1;Dbxref=TrEMBL:B3ITR7,TrEMBL:B3ITR6,TrEMBL:B3ITC0,TrEMBL:B3ITB9,TrEMBL:B3ITB8,TrEMBL:B3ITB7,TrEMBL:B1B1U4,TrEMBL:B1B1U3,TIGR:Os08g07080.1,TIGR:Os08g04500.2,TIGR:Os08g04500.1,TIGR:Os03g24760.1,TIGR:Os03g24690.1,TIGR:Os03g24680.1,TIGR:Os03g22620.1,TIGR:Os01g23530.1,SwissProt:Q8LSC3,SwissProt:Q5SBP6,SwissProt:Q43714,SwissProt:Q39761,SwissProt:Q39760,SwissProt:P93665,SwissProt:P59287,SwissProt:O49853,InterPro:IPR008949,InterPro:IPR008930,InterPro:IPR005630,InterPro:IPR001906,GreenPhyl:GP000072;Derives_from=Ma07_t20740.1;Name=Ma07_p20740.1;Ontology_term=CC_gene:GDS,CC_gene:CAD1-C2,CC_gene:CDN1,CC_gene:CAD1-A,CC_functional_completeness:fragment,PRODUCT:Putative ( )-delta-cadinene synthase isozyme A,GO:0016829,GO:0008152,GO:0000287,CC_evidence_code:ISS,CC_status:in_progress,CC_evidence:automatic,CC_EC_number:no_EC_number;alternative_splicing=to_fill;annotator_comment=to_fill;color=6;date=Tue Dec  7 21:17:29 CET 2010;inference={gaze};note=Ma07_g20740~ Putative ( )-delta-cadinene synthase isozyme A~ CAD1-A~ fragment;old_locus_tag=GSMUA_Achr7G19250_001;owner=musa;source=CIRAD:GSMUA_Achr7T19250_001
+chr07	manual_curation	CDS	28695858	28695881	.	+	1	Parent=Ma07_t20740.1
+chr07	manual_curation	CDS	28696082	28696476	.	+	1	Parent=Ma07_t20740.1
+chr07	manual_curation	CDS	28696696	28696878	.	+	1	Parent=Ma07_t20740.1
+chr07	manual_curation	CDS	28697077	28697212	.	+	1	Parent=Ma07_t20740.1
+chr07	manual_curation	CDS	28697413	28697661	.	+	1	Parent=Ma07_t20740.1
+chr07	manual_curation	CDS	28698071	28698364	.	+	1	Parent=Ma07_t20740.1
+chr07	manual_curation	exon	28695858	28695881	.	+	1	Parent=Ma07_t20740.1
+chr07	manual_curation	exon	28696082	28696476	.	+	1	Parent=Ma07_t20740.1
+chr07	manual_curation	exon	28696696	28696878	.	+	1	Parent=Ma07_t20740.1
+chr07	manual_curation	exon	28697077	28697212	.	+	1	Parent=Ma07_t20740.1
+chr07	manual_curation	exon	28697413	28697661	.	+	1	Parent=Ma07_t20740.1
+chr07	manual_curation	exon	28698071	28698364	.	+	1	Parent=Ma07_t20740.1
+chr07	manual_curation	mRNA	28703673	28704147	.	+	1	ID=Ma07_t20750.1;Parent=Ma07_g20750;Name=Ma07_t20750.1;Note=Vetispiradiene synthase 1;old_locus_tag=GSMUA_Achr7G19260_001;source=CIRAD:GSMUA_Achr7T19260_001
+chr07	manual_curation	polypeptide	28703673	28704116	.	+	1	ID=Ma07_p20750.1;Dbxref=TrEMBL:Q2TJK6,TrEMBL:B3ITR7,TrEMBL:B3ITR6,TrEMBL:B3ITC0,TrEMBL:B3ITB9,TrEMBL:B3ITB8,TrEMBL:B3ITB7,TrEMBL:B1B1U3,TIGR:Os08g07120.1,TIGR:Os08g07100.1,TIGR:Os08g07080.1,TIGR:Os08g04500.2,TIGR:Os08g04500.1,TIGR:Os03g22634.1,TIGR:Os02g26014.1,TIGR:Os01g23530.1,SwissProt:Q9XJ32,SwissProt:Q5SBP6,SwissProt:Q43714,SwissProt:Q39978,SwissProt:Q39761,SwissProt:Q39760,SwissProt:P93665,SwissProt:O49853,InterPro:IPR008949,InterPro:IPR005630,GreenPhyl:GP000072;Derives_from=Ma07_t20750.1;Name=Ma07_p20750.1;Ontology_term=CC_gene:CDN1,CC_gene:CAD1-C2,CC_gene:GDS,CC_gene:CAD1-A,CC_gene:PVS1,CC_functional_completeness:fragment,PRODUCT:Vetispiradiene synthase 1,GO:0016829,GO:0000287,CC_evidence_code:ISS,CC_status:in_progress,CC_evidence:automatic,CC_EC_number:no_EC_number;alternative_splicing=to_fill;annotator_comment=to_fill;color=6;date=Tue Dec  7 21:17:29 CET 2010;inference={gaze};note=Ma07_g20750~ Vetispiradiene synthase 1~ PVS1~ fragment;old_locus_tag=GSMUA_Achr7G19260_001;owner=musa;source=CIRAD:GSMUA_Achr7T19260_001
+chr07	manual_curation	CDS	28703673	28703884	.	+	1	Parent=Ma07_t20750.1
+chr07	manual_curation	CDS	28704044	28704116	.	+	1	Parent=Ma07_t20750.1
+chr07	manual_curation	exon	28703673	28703884	.	+	1	Parent=Ma07_t20750.1
+chr07	manual_curation	exon	28704044	28704147	.	+	1	Parent=Ma07_t20750.1
+chr07	manual_curation	mRNA	28584894	28589410	.	+	.	ID=Ma07_t20660.1;Parent=Ma07_g20660;Dbxref=GeneID:103992270,Genbank:XM_009411904.1;Name=Ma07_t20660.1;Note=alpha-humulene synthase-like;old_locus_tag=GSMUA_Achr7G19200_001,gene18982;previous_location=chr7:22004914..22009505;source=RefSeq:rna25591
+chr07	manual_curation	polypeptide	28584939	28589410	.	+	1	ID=Ma07_p20660.1;Dbxref=GeneID:103992270,Genbank:XM_009411904.1;Derives_from=Ma07_t20660.1;Name=Ma07_p20660.1;Ontology_term=PRODUCT:alpha-humulene synthase-like,CC_functional_completeness:missing_functional_completeness,CC_evidence_code:ISS,CC_status:in_progress,CC_evidence:automatic,CC_EC_number:no_EC_number;alternative_splicing=to_fill;annotator_comment=to_fill;inference={refseq};note=Ma07_g20660~ alpha-humulene synthase-like~ unknown_gene~ missing_functional_completeness;owner=musa
+chr07	manual_curation	CDS	28584939	28585067	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	CDS	28585231	28585489	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	CDS	28587086	28587458	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	CDS	28587641	28587859	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	CDS	28588058	28588193	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	CDS	28588393	28588641	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	CDS	28589117	28589410	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	exon	28584894	28585067	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	exon	28585231	28585489	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	exon	28587086	28587458	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	exon	28587641	28587859	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	exon	28588058	28588193	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	exon	28588393	28588641	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	exon	28589117	28589410	.	+	.	Parent=Ma07_t20660.1
+chr07	manual_curation	mRNA	28660904	28661826	.	+	1	ID=Ma07_t20700.1;Parent=Ma07_g20700;Name=Ma07_t20700.1;Note=Putative Germacrene-D synthase;old_locus_tag=GSMUA_Achr7G19230_001;source=CIRAD:GSMUA_Achr7T19230_001
+chr07	manual_curation	polypeptide	28660904	28661826	.	+	1	ID=Ma07_p20700.1;Dbxref=TrEMBL:Q2TJK6,TrEMBL:D2YZQ1,TrEMBL:D2YZP9,TrEMBL:B3ITR7,TrEMBL:B3ITB9,TrEMBL:B3ITB8,TrEMBL:B3ITB7,TrEMBL:B1B1U3,TIGR:Os08g07080.1,TIGR:Os03g24760.1,TIGR:Os03g24690.1,TIGR:Os03g24680.1,TIGR:Os03g24640.1,TIGR:Os03g22620.1,TIGR:Os01g42610.1,TIGR:Os01g23530.1,SwissProt:Q9LLR9,SwissProt:Q8LSC2,SwissProt:Q5SBP6,SwissProt:Q43714,SwissProt:Q39761,SwissProt:Q39760,SwissProt:P93665,SwissProt:O49853,InterPro:IPR008949,InterPro:IPR005630,GreenPhyl:GP000072;Derives_from=Ma07_t20700.1;Name=Ma07_p20700.1;Ontology_term=CC_gene:CAD1-C2,CC_gene:CDN1,CC_gene:ECS1,CC_gene:CAD1-A,CC_gene:GDS,CC_functional_completeness:fragment,PRODUCT:Putative Germacrene-D synthase,GO:0016829,GO:0000287,CC_evidence_code:ISS,CC_status:in_progress,CC_evidence:automatic,CC_EC_number:no_EC_number;alternative_splicing=to_fill;annotator_comment=to_fill;color=6;date=Tue Dec  7 21:17:29 CET 2010;inference={gaze};note=Ma07_g20700~ Putative Germacrene-D synthase~ GDS~ fragment;old_locus_tag=GSMUA_Achr7G19230_001;owner=musa;source=CIRAD:GSMUA_Achr7T19230_001
+chr07	manual_curation	CDS	28660904	28661061	.	+	1	Parent=Ma07_t20700.1
+chr07	manual_curation	CDS	28661258	28661393	.	+	1	Parent=Ma07_t20700.1
+chr07	manual_curation	CDS	28661594	28661714	.	+	1	Parent=Ma07_t20700.1
+chr07	manual_curation	CDS	28661786	28661826	.	+	1	Parent=Ma07_t20700.1
+chr07	manual_curation	exon	28660904	28661061	.	+	1	Parent=Ma07_t20700.1
+chr07	manual_curation	exon	28661258	28661393	.	+	1	Parent=Ma07_t20700.1
+chr07	manual_curation	exon	28661594	28661714	.	+	1	Parent=Ma07_t20700.1
+chr07	manual_curation	exon	28661786	28661826	.	+	1	Parent=Ma07_t20700.1
+chr07	manual_curation	mRNA	28621925	28629791	.	+	.	ID=Ma07_t20680.1;Parent=Ma07_g20680;Dbxref=GeneID:103992313,Genbank:XM_009411959.1;Name=Ma07_t20680.1;Note=alpha-humulene synthase-like;old_locus_tag=GSMUA_Achr7G19220_001,gene18983;previous_location=chr7:22040319..22049218;source=RefSeq:rna25592
+chr07	manual_curation	polypeptide	28621925	28629791	.	+	1	ID=Ma07_p20680.1;Dbxref=GeneID:103992313,Genbank:XM_009411959.1;Derives_from=Ma07_t20680.1;Name=Ma07_p20680.1;Ontology_term=PRODUCT:alpha-humulene synthase-like,CC_functional_completeness:missing_functional_completeness,CC_evidence_code:ISS,CC_status:in_progress,CC_evidence:automatic,CC_EC_number:no_EC_number;alternative_splicing=to_fill;annotator_comment=to_fill;inference={refseq};note=Ma07_g20680~ alpha-humulene synthase-like~ unknown_gene~ missing_functional_completeness;owner=musa
+chr07	manual_curation	CDS	28621925	28622144	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	CDS	28623063	28623194	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	CDS	28625022	28625223	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	CDS	28628070	28628252	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	CDS	28628428	28628563	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	CDS	28628769	28629017	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	CDS	28629498	28629791	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	exon	28621925	28622144	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	exon	28623063	28623194	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	exon	28625022	28625223	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	exon	28628070	28628252	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	exon	28628428	28628563	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	exon	28628769	28629017	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	exon	28629498	28629791	.	+	.	Parent=Ma07_t20680.1
+chr07	manual_curation	mRNA	28574249	28575551	.	+	1	ID=Ma07_t20650.1;Parent=Ma07_g20650;Name=Ma07_t20650.1;Note=Putative Casbene synthase%2C chloroplastic;old_locus_tag=GSMUA_AchrUn_randomG13770_001;source=CIRAD:GSMUA_AchrUn_randomT13770_001
+chr07	manual_curation	polypeptide	28574249	28575551	.	+	1	ID=Ma07_p20650.1;Dbxref=TrEMBL:D2YZQ1,TrEMBL:B3ITR7,TrEMBL:B3ITR6,TrEMBL:B3ITC0,TrEMBL:B3ITB9,TrEMBL:B3ITB8,TrEMBL:B3ITB7,TrEMBL:B1B1U3,TIGR:Os08g07080.1,TIGR:Os07g11790.1,TIGR:Os04g27720.1,TIGR:Os03g31430.1,TIGR:Os03g24650.1,TIGR:Os03g22620.1,TIGR:Os01g42610.1,TIGR:Os01g23530.1,SwissProt:Q8LSC3,SwissProt:Q84UU4,SwissProt:Q43714,SwissProt:Q39761,SwissProt:Q39760,SwissProt:P93665,SwissProt:P59287,SwissProt:O49853,InterPro:IPR008949,InterPro:IPR005630,GreenPhyl:GP000072;Derives_from=Ma07_t20650.1;Name=Ma07_p20650.1;Ontology_term=CC_gene:TPS21,CC_gene:CAD1-C2,CC_gene:CDN1,CC_gene:CAD1-A,CC_functional_completeness:fragment,PRODUCT:Putative Casbene synthase%2C chloroplastic,GO:0016829,GO:0000287,CC_evidence_code:ISS,CC_status:in_progress,CC_evidence:automatic,CC_EC_number:no_EC_number;alternative_splicing=to_fill;annotator_comment=to_fill;color=6;date=Tue Dec  7 21:17:29 CET 2010;inference={gaze};note=Ma07_g20650~ Putative Casbene synthase%2C chloroplastic~ CAD1-A~ fragment;old_locus_tag=GSMUA_AchrUn_randomG13770_001;owner=musa;source=CIRAD:GSMUA_AchrUn_randomT13770_001
+chr07	manual_curation	CDS	28574249	28574323	.	+	1	Parent=Ma07_t20650.1
+chr07	manual_curation	CDS	28574524	28574772	.	+	1	Parent=Ma07_t20650.1
+chr07	manual_curation	CDS	28575258	28575551	.	+	1	Parent=Ma07_t20650.1
+chr07	manual_curation	exon	28574249	28574323	.	+	1	Parent=Ma07_t20650.1
+chr07	manual_curation	exon	28574524	28574772	.	+	1	Parent=Ma07_t20650.1
+chr07	manual_curation	exon	28575258	28575551	.	+	1	Parent=Ma07_t20650.1
+chr07	manual_curation	mRNA	28688572	28690798	.	+	.	ID=Ma07_t20720.1;Parent=Ma07_g20720;Dbxref=GeneID:103992317,Genbank:XM_009411961.1;Name=Ma07_t20720.1;Note=alpha-humulene synthase-like;old_locus_tag=GSMUA_Achr7G19240_001,gene18986;previous_location=chr7:22119575..22121801;source=RefSeq:rna25594
+chr07	manual_curation	polypeptide	28688604	28690798	.	+	1	ID=Ma07_p20720.1;Dbxref=GeneID:103992317,Genbank:XM_009411961.1;Derives_from=Ma07_t20720.1;Name=Ma07_p20720.1;Ontology_term=PRODUCT:alpha-humulene synthase-like,CC_functional_completeness:missing_functional_completeness,CC_evidence_code:ISS,CC_status:in_progress,CC_evidence:automatic,CC_EC_number:no_EC_number;alternative_splicing=to_fill;annotator_comment=to_fill;inference={refseq};note=Ma07_g20720~ alpha-humulene synthase-like~ unknown_gene~ missing_functional_completeness;owner=musa
+chr07	manual_curation	CDS	28688604	28688938	.	+	.	Parent=Ma07_t20720.1
+chr07	manual_curation	CDS	28689158	28689340	.	+	.	Parent=Ma07_t20720.1
+chr07	manual_curation	CDS	28689460	28689595	.	+	.	Parent=Ma07_t20720.1
+chr07	manual_curation	CDS	28689785	28690033	.	+	.	Parent=Ma07_t20720.1
+chr07	manual_curation	CDS	28690505	28690798	.	+	.	Parent=Ma07_t20720.1
+chr07	manual_curation	exon	28688572	28688938	.	+	.	Parent=Ma07_t20720.1
+chr07	manual_curation	exon	28689158	28689340	.	+	.	Parent=Ma07_t20720.1
+chr07	manual_curation	exon	28689460	28689595	.	+	.	Parent=Ma07_t20720.1
+chr07	manual_curation	exon	28689785	28690033	.	+	.	Parent=Ma07_t20720.1
+chr07	manual_curation	exon	28690505	28690798	.	+	.	Parent=Ma07_t20720.1
+chr07	manual_curation	mRNA	28693498	28695664	.	+	.	ID=Ma07_t20730.1;Parent=Ma07_g20730;Dbxref=GeneID:103992318,Genbank:XM_009411963.1;Name=Ma07_t20730.1;Note=alpha-humulene synthase-like;previous_location=chr7:22124501..22126780;source=RefSeq:rna25595
+chr07	manual_curation	polypeptide	28693498	28695664	.	+	1	ID=Ma07_p20730.1;Dbxref=GeneID:103992318,Genbank:XM_009411963.1;Derives_from=Ma07_t20730.1;Name=Ma07_p20730.1;Ontology_term=PRODUCT:alpha-humulene synthase-like,CC_functional_completeness:missing_functional_completeness,CC_evidence_code:ISS,CC_status:in_progress,CC_evidence:automatic,CC_EC_number:no_EC_number;alternative_splicing=to_fill;annotator_comment=to_fill;inference={refseq};note=Ma07_g20730~ alpha-humulene synthase-like~ unknown_gene~ missing_functional_completeness;owner=musa
+chr07	manual_curation	CDS	28693498	28693586	.	+	1	Parent=Ma07_t20730.1
+chr07	manual_curation	CDS	28693719	28693926	.	+	1	Parent=Ma07_t20730.1
+chr07	manual_curation	CDS	28694127	28694145	.	+	1	Parent=Ma07_t20730.1
+chr07	manual_curation	CDS	28694424	28694618	.	+	1	Parent=Ma07_t20730.1
+chr07	manual_curation	CDS	28695657	28695664	.	+	1	Parent=Ma07_t20730.1
+chr07	manual_curation	exon	28693498	28693586	.	+	1	Parent=Ma07_t20730.1
+chr07	manual_curation	exon	28693719	28693926	.	+	1	Parent=Ma07_t20730.1
+chr07	manual_curation	exon	28694127	28694145	.	+	1	Parent=Ma07_t20730.1
+chr07	manual_curation	exon	28694424	28694618	.	+	1	Parent=Ma07_t20730.1
+chr07	manual_curation	exon	28695657	28695664	.	+	1	Parent=Ma07_t20730.1

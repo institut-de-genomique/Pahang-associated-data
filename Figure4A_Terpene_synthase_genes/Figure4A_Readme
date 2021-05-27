@@ -115,7 +115,7 @@ python -m jcvi.graphics.synteny cut.blocks right_left_v4.bed cut.layout --glyphc
 
 
 ###############################################################################################################
-## extended region : synteny on the region of the chromosome 7 containing the terpense synthase genes clusters
+## extended region : synteny on the region of the chromosome 7 containing the terpene synthase genes clusters (V2 vs V4)
 
 
 ## coordinates on chromosome 7 of the V4 assembly :
@@ -152,7 +152,7 @@ python -m jcvi.formats.fasta format expanded_v2_TDG_CDS.fasta expanded_v2.cds
 python -m jcvi.formats.fasta format expanded_v4_TDG_CDS.fasta expanded_v4.cds
 
 
-# Pairwise synteny search (using last alignment): left part of the V2 cluster vs V4 cluster
+# Pairwise synteny search (using last alignment):
 
 python -m jcvi.compara.catalog ortholog expanded_v2 expanded_v4 --no_strip_names
 

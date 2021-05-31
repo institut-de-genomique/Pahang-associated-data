@@ -10,7 +10,7 @@
 ## python/3.6
 ## pip install --user jcvi
 
-## All the files are available in the Figure4A_Terpene_synthase_genes folder
+## All the files are available in the Figure4A folder
 
 #########################################################################################################################################################################
 # extraction of the terpene synthase genes in the V4 annotation gff file

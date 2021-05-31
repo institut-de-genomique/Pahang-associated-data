@@ -2,5 +2,5 @@
 
 /circos-0.69-9/bin/circos -conf conf/circos.conf
 
-## All the files are available in the Figure2B_Pahang_V2_V4_comparison folder
-## All the configuration files are available in the Figure2B_Pahang_V2_V4_comparison/conf folder
+## All the files are available in the Figure2B folder
+## All the configuration files are available in the Figure2B/conf folder

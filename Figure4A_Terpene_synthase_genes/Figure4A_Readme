@@ -1,15 +1,18 @@
 
 ### README for the figure 4A 
 
-### Figure prepared thanks to the jvci software
+### Figure prepared thanks to the jvci software. Tools and tutorial are available here :
 ### https://github.com/tanghaibao/jcvi
 ### https://github.com/tanghaibao/jcvi/wiki/MCscan-(Python-version)
 
-
+## dependencies :
 ## gcc/7.3.0
 ## python/3.6
 ## pip install --user jcvi
 
+## All the files are available in the Figure4A_Terpene_synthase_genes folder
+
+#########################################################################################################################################################################
 # extraction of the terpene synthase genes in the V4 annotation gff file
 
 

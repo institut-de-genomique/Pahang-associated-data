@@ -3,7 +3,7 @@ This repository contains all the scripts used to produce the main figures of the
 
 Telomere-to-telomere gapless chromosomes of banana using nanopore sequencing
 Caroline Belser, Franc-Christophe Baurens, Benjamin Noel, Guillaume Martin, Corinne Cruaud, Benjamin Istace, Nabila Yahiaoui, K
-arine Labadie, Eva Hribov▒, Jaroslav Dolezel, Arnaud Lemainque, Patrick Wincker, Ang▒lique D'Hont, Jean-Marc Aury
+arine Labadie, Eva Hribova, Jaroslav Dolezel, Arnaud Lemainque, Patrick Wincker, Angelique D'Hont, Jean-Marc Aury
 bioRxiv 2021.0416.440017; doi: https://doi.org/10.1101/2021.04.16.440017
 
 
